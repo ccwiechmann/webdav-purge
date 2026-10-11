@@ -71,6 +71,10 @@ io.ccw.webdav.purge
 - **Error handling:** unexpected failures surface as
   `WebDavPurgeException` with a short, actionable message; no stack traces
   to the user.
+- **Exit codes:** `0` success, `1` purge/verification failure (message on
+  stderr), `2` invalid command line usage (picocli prints message + usage on
+  stderr). Keep `main` in `WebDavPurge` as the only place that calls
+  `System.exit`.
 
 ## Testing
 

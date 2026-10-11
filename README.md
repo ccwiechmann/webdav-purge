@@ -58,7 +58,16 @@ WebDAV directory 'uploads/outbox' successfully purged.
 ```
 
 If the tool cannot verify that the directory is empty (e.g. some delete
-failed) it prints an error on standard error and exits non-zero.
+failed) it prints a single short error message on standard error and exits
+non-zero.
+
+Exit codes:
+
+| Code | Meaning                                        |
+|------|------------------------------------------------|
+| `0`  | Directory successfully purged                  |
+| `1`  | Purge or verification failed (message on stderr) |
+| `2`  | Invalid command line usage (usage on stderr)   |
 
 ## Building
 
