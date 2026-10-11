@@ -11,7 +11,7 @@
 
     <name>webdav-purge</name>
     <description>A command line tool that purges the content of a directory on a WebDAV server.</description>
-    <url>https://github.com/ccw/webdav-purge</url>
+    <url>https://github.com/ccwiechmann/webdav-purge</url>
     <inceptionYear>2017</inceptionYear>
 
     <licenses>
